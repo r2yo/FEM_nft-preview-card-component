@@ -13,34 +13,45 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
+    .attribution { font-size: 11px; text-align: center; padding-top: 10px; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
-<body>
+<body class="column">
 
   <main>
-    <div>
+    <div class="image">
       <img src="images/image-equilibrium.jpg" alt="equilibrium-image">
+      <div class="hidden">
+        <img src="images/icon-view.svg" alt="icon-view">
+      </div>
     </div>
     <div class="info">
       <h1>Equilibrium #3429</h1>
       <p>Our Equilibrium collection promotes balance and calm.</p>
-      <div class="price">
-        0.041 ETH
-        3 days left
+    </div>
+    <div class="price">
+      <div class="ethereum">
+        <img src="images/icon-ethereum.svg" alt="icon-ethereum">
+        <p>0.041 ETH</p>
+      </div>
+      <div class="price-time">
+        <img src="images/icon-clock.svg" alt="icon-clock">
+        <p>3 days left</p>
       </div>
     </div>
-    <div>
-      <img src="images/image-avatar.png" alt="jules-wyvern">
+    <div class="row profile">
+      <div class="profile-photo">
+        <img src="images/image-avatar.png" alt="jules-wyvern">
+      </div>
+      <p><span class="text-blue">Creation of</span> <span class="name">Jules Wyvern</span></p>
     </div>
-    Creation of Jules Wyvern
   </main>
 
   <footer>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/r2yo/FEM_nft-preview-card-component">r2yo</a>.
     </div>
   </footer>
 </body>

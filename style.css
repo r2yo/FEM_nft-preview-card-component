@@ -3,9 +3,116 @@
   padding: 0;
   box-sizing: border-box; }
 
+a, a:hover, a:link, a:visited {
+  text-decoration: none;
+  color: #8bacda; }
+
 .row {
   display: flex; }
 
 .column {
   display: flex;
   flex-direction: column; }
+
+img {
+  width: 100%;
+  border-radius: 15px; }
+
+body {
+  padding: 50px 30px;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  background: #0d192b;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center; }
+
+main {
+  max-width: 375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 20px;
+  border-radius: 15px;
+  padding: 30px;
+  background: #14253d; }
+
+.profile {
+  align-items: center;
+  gap: 20px; }
+  .profile .text-blue {
+    color: #8bacda; }
+
+.profile-photo {
+  width: 15%; }
+  .profile-photo img {
+    border: 3px solid white;
+    border-radius: 100%; }
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; }
+  .info h1:hover {
+    cursor: pointer;
+    color: #00fff7; }
+
+.price {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #2f415b; }
+
+.price-time {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center; }
+  .price-time img {
+    width: 20px; }
+  .price-time p {
+    color: #8bacda; }
+
+.ethereum {
+  display: flex;
+  align-items: center;
+  gap: 10px; }
+  .ethereum img {
+    width: 10px; }
+  .ethereum p {
+    font-weight: bold;
+    color: #00fff7; }
+
+.image {
+  position: relative; }
+
+.hidden {
+  display: none;
+  background: rgba(0, 255, 247, 0.35);
+  width: 315px;
+  height: 315px;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .hidden img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px; }
+
+.image:hover .hidden {
+  display: inline-block;
+  cursor: pointer; }
+
+.name {
+  color: white; }
+
+.name:hover {
+  color: #00fff7;
+  cursor: pointer; }
